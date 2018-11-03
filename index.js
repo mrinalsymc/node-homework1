@@ -24,7 +24,7 @@ const serverHandling = function(req, res) {
     var parsedUrl = url.parse(req.url, true);
     var path = parsedUrl.pathname;
 
-    //getting the path from the query string
+    //getting the path
     var trimmedPath = path.replace(/^\/+|\/+$/g, '');
 
     var decoder = new StringDecoder('utf-8');
